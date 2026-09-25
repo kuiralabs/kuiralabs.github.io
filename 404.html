@@ -32,6 +32,22 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/mandate/_expo/static/js/web/index-2daeaa93e194258de322a7f94653ce20.js" defer></script>
+  
+<script>
+(function () {
+  var base = "/mandate";
+  var path = location.pathname;
+  if (path === base || path.indexOf(base + "/") === 0) {
+    ["/mandate/_expo/static/js/web/index-2daeaa93e194258de322a7f94653ce20.js"].forEach(function (src) {
+      var s = document.createElement("script");
+      s.src = src; s.async = false;
+      document.body.appendChild(s);
+    });
+  } else {
+    document.title = "Not found";
+    document.body.textContent = "Not found";
+  }
+})();
+</script>
 </body>
 </html>

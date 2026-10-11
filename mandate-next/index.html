@@ -1,37 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Mandate</title>
-    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
-    <style id="expo-reset">
-      /* These styles make the body full-height */
-      html,
-      body {
-        height: 100%;
-      }
-      /* These styles disable body scrolling if you are using <ScrollView> */
-      body {
-        overflow: hidden;
-      }
-      /* These styles make the root element full-height */
-      #root {
-        display: flex;
-        height: 100%;
-        flex: 1;
-      }
-    </style>
-  <link rel="preload" href="/mandate-next/_expo/static/css/native-tabs.module-78b0f59737571f455720970791a36bdd.css" as="style"><link rel="stylesheet" href="/mandate-next/_expo/static/css/native-tabs.module-78b0f59737571f455720970791a36bdd.css"></head>
-
-  <body>
-    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/mandate-next/_expo/static/js/web/index-c4a97737cd073b7e4f6bb105c6a72176.js" defer></script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandate</title>
+<!--
+  The wallet lived here while it was being readied to replace the one at /mandate/, which it did on
+  11 October 2026. This page sends whoever opens the old address on to it, with whatever followed the
+  address, so a link or a connector that still names this one finds the wallet.
+-->
+<meta http-equiv="refresh" content="0; url=/mandate/">
+<script>
+  location.replace("/mandate/" + location.search + location.hash);
+</script>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #071412; color: #e6f4ef; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: #46f0b1; }
+</style>
+</head>
+<body>
+<p>The wallet has moved to <a href="/mandate/">kuiralabs.github.io/mandate/</a>.</p>
 </body>
 </html>
